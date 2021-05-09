@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<!--残日-->
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MF_Sun</defName>
+    <label>incomplete sun</label>
+	<!--残阳-->
+    <description>"the incomplete sun" With bright element as the core and mana as the body,it will damage the undead and Demons around and heal the allies around.</description>
+	<!--以光元素为核心，法力为躯壳所形成的「残阳」,会伤害四周的亡灵，恶魔，治愈四周的盟友。-->
+    <category>Building</category>
+    <graphicData>
+      <texPath>MF_Abilities/MF_Bright</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>25</glowRadius>
+        <glowColor>(252,248,200,0)</glowColor>
+      </li>
+	  <li Class="TorannMagic.CompProperties_Summoned"></li>
+	  <li>
+        <compClass>MF_GuiYi.MF_Bright_Comp</compClass>
+      </li>	  
+    </comps>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MF_altar</defName>
+    <label>ancient altar</label>
+	<!--远古圣坛-->
+    <description>The altar passed down from ancient times,it still retains some power of ancient devourer. Although it is not many, it is enough for a mortal to become a devourer.</description>
+	<!--从远古之时传承下来的圣坛，这个圣坛之中还保留着些许噬法者的力量，虽不多，但足够一位凡人成为噬法者了。-->
+    <category>Building</category>
+	<thingClass>MF_GuiYi.MF_Building</thingClass>
+    <graphicData>
+      <texPath>MF_ThingDefs/Altar</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>3</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <pathCost>14</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+	<uiIconScale>1.25</uiIconScale>	
+  </ThingDef>
+
+    <JobDef>
+        <defName>MF_Use</defName>
+        <driverClass>MF_GuiYi.MF_Job</driverClass>
+        <reportString>Acceptance.</reportString>
+	</JobDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>MF_Powerlessaltar</defName>
+    <label>Powerless altar</label>
+	<!--寂灭圣坛-->
+    <description>The altar passed down from ancient times.There is no power in this altar. May it be a good decoration?</description>
+	<!--从远古之时传承下来的圣坛，这个圣坛之中已无丝毫力量，当做装饰或许不错？-->
+    <category>Building</category>
+    <graphicData>
+      <texPath>MF_ThingDefs/Altar_Empty</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <drawSize>3</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Impassable</passability>
+    <pathCost>14</pathCost>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.15</fillPercent>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Flammability>0</Flammability>
+      <MeditationFocusStrength>0.0</MeditationFocusStrength>
+    </statBases>
+    <selectable>true</selectable>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+	<uiIconScale>1.25</uiIconScale>	
+	<comps>
+      <li Class="CompProperties_Flickable"/>
+    </comps>
+  </ThingDef>
+
+</Defs>

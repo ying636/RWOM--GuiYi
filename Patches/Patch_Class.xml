@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>*/TorannMagic.TM_CustomClassDef[defName = "TM_CustomClasses"]/customClasses</xpath>
+	<value>		
+		  <li>
+			<classTrait>MF_ManaDevourer</classTrait>			
+			<traitDegree>0</traitDegree>					
+			<classHediff>MF_Mana_Pure</classHediff>							
+			<classTexturePath>chronomancerMageMark</classTexturePath>
+			<classIconPath>CustomFlame</classIconPath>		
+			<classIconColor>(1,0.09,0.39)</classIconColor>		
+			<tornScript></tornScript>					
+			<fullScript></fullScript>			
+			
+			<classMageAbilities>	
+            <li>MF_Contract</li>	
+            <li>MF_Devour</li>	
+			<li>MF_Soothe</li>	
+			<li>MF_Polymerization</li>
+			</classMageAbilities>
+			<learnableSpells>								
+			</learnableSpells>								
+			
+			<classFighterAbilities>							
+			</classFighterAbilities>
+			<learnableSkills>								
+			</learnableSkills>
+			
+			<isMage>true</isMage>							
+			<isFighter>false</isFighter>						
+            <maxMageLevel>300</maxMageLevel>       					
+									
+			<isNecromancer>false</isNecromancer>			
+			<isUndead>false</isUndead>						
+															
+			<isAndroid>false</isAndroid>					
+			<isAdvancedClass>false</isAdvancedClass>		
+		  </li>
+		  
+		  <li>
+			<classTrait>MF_DevourerApostle</classTrait>			
+			<traitDegree>0</traitDegree>					
+			<classHediff></classHediff>							
+			<classTexturePath>chronomancerMageMark</classTexturePath>
+			<classIconPath>CustomFlame</classIconPath>		
+			<classIconColor>(1,0.09,0.39)</classIconColor>		
+			<tornScript></tornScript>					
+			<fullScript></fullScript>			
+			
+			<classMageAbilities>	
+			<li>TM_TransferMana</li>
+			<li>MF_GuiYi_Ability</li>
+			</classMageAbilities>
+			<learnableSpells>								
+			</learnableSpells>								
+			
+			<classFighterAbilities>							
+			</classFighterAbilities>
+			<learnableSkills>								
+			</learnableSkills>
+			
+			<isMage>true</isMage>							
+			<isFighter>false</isFighter>						
+            <maxMageLevel>300</maxMageLevel>       					
+									
+			<isNecromancer>false</isNecromancer>			
+			<isUndead>false</isUndead>						
+															
+			<isAndroid>false</isAndroid>					
+			<isAdvancedClass>false</isAdvancedClass>		
+		  </li>
+		  
+		  <li>
+			<classTrait>MF_ElementApostle</classTrait>			
+			<traitDegree>0</traitDegree>					
+			<classHediff></classHediff>							
+			<classTexturePath>chronomancerMageMark</classTexturePath>
+			<classIconPath>CustomFlame</classIconPath>		
+			<classIconColor>(1,0.09,0.39)</classIconColor>		
+			<tornScript></tornScript>					
+			<fullScript></fullScript>			
+			
+			<classMageAbilities>	
+			<li>TM_TransferMana</li>
+			<li>MF_GuiYi_Ability</li>
+			<li>TM_Firebolt</li>
+			<li>TM_Icebolt</li>
+			<li>TM_Sentinel</li>
+			<li>TM_LightningBolt</li>
+			</classMageAbilities>
+			<learnableSpells>								
+			</learnableSpells>								
+			
+			<classFighterAbilities>							
+			</classFighterAbilities>
+			<learnableSkills>								
+			</learnableSkills>
+			
+			<isMage>true</isMage>							
+			<isFighter>false</isFighter>						
+            <maxMageLevel>300</maxMageLevel>       					
+									
+			<isNecromancer>false</isNecromancer>			
+			<isUndead>false</isUndead>						
+															
+			<isAndroid>false</isAndroid>					
+			<isAdvancedClass>false</isAdvancedClass>		
+		  </li>
+	</value>
+  </Operation>
+</Patch>

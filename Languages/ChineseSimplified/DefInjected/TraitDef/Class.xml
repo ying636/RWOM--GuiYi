@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		<MF_ManaDevourer.degreeDatas.0.label>&lt;color=#CC66FF>&lt;b>噬法者&lt;/b>&lt;/color></MF_ManaDevourer.degreeDatas.0.label>
+		<MF_ManaDevourer.degreeDatas.0.description>[PAWN_nameDef]是一位噬法者，[PAWN_pronoun]致力于吞噬各种各样的“魔法力量”，每当[PAWN_pronoun]吞噬了一种魔法力量，[PAWN_pronoun]都会得到一种新技能或BUFF，而且噬法者可以赋予其他人强大的力量并把他们变为[PAWN_pronoun]的随从。。</MF_ManaDevourer.degreeDatas.0.description>
+	
+    	<MF_DevourerApostle.degreeDatas.0.label>&lt;color=#CC66FF>&lt;b>噬法者眷族&lt;/b>&lt;/color></MF_DevourerApostle.degreeDatas.0.label>
+		<MF_DevourerApostle.degreeDatas.0.description>[PAWN_nameDef]是一位噬法者的眷族，[PAWN_pronoun]被一位噬法者赋予了强大的力量，代价是成为他的眷族。</MF_DevourerApostle.degreeDatas.0.description>
+		
+    	<MF_ElementApostle.degreeDatas.0.label>&lt;color=#CC66FF>&lt;b>元素使徒&lt;/b>&lt;/color></MF_ElementApostle.degreeDatas.0.label>
+		<MF_ElementApostle.degreeDatas.0.description>[PAWN_nameDef]是一位元素使徒，[PAWN_pronoun]在被噬法者赐予了元素之力后进阶为一个特殊的职业「元素使徒」，元素使徒借用天地间游离的元素战斗。</MF_ElementApostle.degreeDatas.0.description>
+		
+		
+		
+	</LanguageData>

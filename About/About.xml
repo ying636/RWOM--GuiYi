@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>RW of Magic---GuiYi(WIP)</name>
+	<author>22</author>
+		    <packageId>22.MF.GuiYi</packageId>
+	<supportedVersions>
+      <li>1.2</li>
+	</supportedVersions>
+	<description>A class expansion pack for Rimworld of Magic，
+	Added an ancient and unique class「Mana Devourer」
+	A class that can devour a mage and absorb his power. It can also give others the power to transform he into「Apostle」. However, this class is now extinct.
+	A new Scenario
+	Ancient ruins
+	Remains of ancient Devourer
+	many new abilities
+	two accessory class of Devourer
+	
+	Future plans
+    more abilities
+    more class
+    add special effects
+	--NEED A MAGIC OF RIMWORLD MOD AND VEF MOD--
+	github:
+	----------
+	一个边魔的职业扩展
+	添加了一个远古的具有唯一性的职业「噬法者」
+	能够吞噬法师并吸收他的力量的职业，而且可以赐予他人力量把ta转化为眷族，但是这个职业现已灭绝。
+	一个新剧本
+	远古废墟
+	远古的噬法者们遗留下来的遗迹
+	许多新技能
+	两个噬法者的附属职业
+	
+	未来计划
+	更多的技能
+	更多的职业
+	特效
+	</description>
+</ModMetaData>

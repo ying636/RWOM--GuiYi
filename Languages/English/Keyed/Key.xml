@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+	<MF_Radius>Radius：</MF_Radius>
+    <MF_Number>Number of damage：</MF_Number>
+    <MF_time>Damage interval：</MF_time>
+	
+    <MF_Projected>Projected</MF_Projected>
+    <MF_notProjected>Not projected</MF_notProjected>
+	
+	<MF_NO>this pawn is a mage</MF_NO>
+	<MF_NOMANA>[Pure Mana]is no enough</MF_NOMANA>
+	
+    <MF_NoEarth>Earth element is no enough</MF_NoEarth>
+	<MF_NoLightning>Thunder element is no enough</MF_NoLightning>
+	<MF_NoBright>Bright element is no enough </MF_NoBright>	
+	
+	<MF_Earth>Earth element：</MF_Earth>
+	<MF_Lightning>Thunder element ：</MF_Lightning>
+	<MF_Bright>Bright element：</MF_Bright>	
+
+	</LanguageData>

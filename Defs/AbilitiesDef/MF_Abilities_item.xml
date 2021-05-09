@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Contract</defName>
+    <label>Contract：Apostle</label>
+	<!--契约：眷族-->
+    <description>.</description>
+	<!--与一位殖民者签订「眷族契约」，噬法者将力量赐予给眷族，眷族将为噬法者开辟江河，以身铺道。
+	
+	
+	
+	眷族可以通过噬法者赐予新的力量获得强化。
+	需要纯粹法力:1ea-->
+	<uiIconPath>MF_Abilities/MF_Contract</uiIconPath>
+    <manaCost>0.50</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>MF_GuiYi.MF_Verb_Contract</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Buff_Shadow</defaultProjectile>
+		<abilityDef>MF_Contract</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>1</SecondsToRecharge>
+        <range>10</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Contract</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Contract</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label>MF_Contract_pwr</label>
+					<description>MF_Contract_pwr_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>										
+					<label>MF_Contract_ver</label>
+					<description>MF_Contract_ver_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>
+					<label>MF_Contract_eff</label>
+					<description>MF_Contract_eff_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	<!--眷族-->
+	
+	<TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Soothe</defName>
+    <label>soothe Apostle</label>
+	<!--抚慰眷族-->
+    <description>.</description>
+	<!--抚慰眷族，使眷族平静-->
+	<uiIconPath>MF_Abilities/MF_Soothe</uiIconPath>
+    <manaCost>0.0</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>MF_GuiYi.MF_Follower</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Projecting_Soothe</defaultProjectile>
+		<abilityDef>MF_Soothe</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>1</SecondsToRecharge>
+        <range>10</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf> 
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Soothe</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Soothe</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax>1</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+		<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Projecting_Soothe</thingClass>
+	    <defName>MF_Projecting_Soothe</defName>
+        <label>MF_Projecting_Soothe</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--技能：攻击-->
+	
+	
+	<!--诡异弹-->
+	<TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+        <defName>MF_GuiYi_Ability</defName>
+        <label>GuiYi</label>
+		<!--诡异-->
+		<description>Launch 「GuiYi Projectile」, which will dazzle the target when hit.</description>
+        <!---发射「诡异弹」，诡异弹击中时会使目标眩晕。-->
+		<uiIconPath>MF_Abilities/MF_GuiYi_Projectile</uiIconPath>
+        <manaCost>0.25</manaCost>
+		<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	  <MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_GuiYi_Projectile</defaultProjectile>
+		<abilityDef>MF_GuiYi_Ability</abilityDef>
+        <warmupTime>0.5</warmupTime>
+        <SecondsToRecharge>20</SecondsToRecharge>
+        <range>35</range>
+        <soundCast>TM_AirWooshLow</soundCast>
+        <muzzleFlashScale>4</muzzleFlashScale>
+        <isPrimary>true</isPrimary>
+		<isViolent>true</isViolent>
+		<AlwaysHits>true</AlwaysHits>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		<forcedMissRadius>1</forcedMissRadius>
+		<AbilityTargetCategory>TargetThing</AbilityTargetCategory>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>true</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>true</canTargetLocations>
+		</targetParams>
+      </MainVerb>
+    </TorannMagic.TMAbilityDef>
+	
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_GuiYi_Ability</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_GuiYi_Ability</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax>1</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+		<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_GuiYi_Projecting</thingClass>
+	    <defName>MF_GuiYi_Projectile</defName>
+        <label>MF_GuiYi_Projectile</label>
+        <graphicData>
+			<texPath>MF_Abilities/MF_GuiYi_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>false</flyOverhead>
+            <damageDef>Stun</damageDef>
+            <damageAmountBase>10</damageAmountBase>
+            <speed>10</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--眷族：元素给予-->
+	
+	<TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Element</defName>
+    <label>Apostle:give power of element</label>
+	<!--眷族：给予元素之力-->
+    <description>Give a Apostle the power of the element to make him an "element apostle"..</description>
+	<!--给予一位眷族元素之力，使ta化为「元素使徒」。-->
+	<uiIconPath>MF_Abilities/MF_GE</uiIconPath>
+    <manaCost>0.0</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>MF_GuiYi.MF_Given</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Projecting_Element</defaultProjectile>
+		<abilityDef>MF_Element</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>1</SecondsToRecharge>
+        <range>10</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf> 
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Element</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Element</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax>1</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+		<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>AbilityUser.Projectile_AbilityBase</thingClass>
+	    <defName>MF_Projecting_Element</defName>
+        <label>MF_Projecting_Element</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	
+</Defs>

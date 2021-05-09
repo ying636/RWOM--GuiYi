@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+	<MF_Radius>半径：</MF_Radius>
+    <MF_Number>攻击次数：</MF_Number>
+    <MF_time>攻击间隔：</MF_time>
+	
+    <MF_Projected>已显现</MF_Projected>
+    <MF_notProjected>未显现</MF_notProjected>
+	
+	<MF_NO>此人已为法师</MF_NO>
+	<MF_NOMANA>[纯粹法力]不足</MF_NOMANA>
+	
+    <MF_NoEarth>土元素不足</MF_NoEarth>
+	<MF_NoLightning>雷元素不足</MF_NoLightning>
+	<MF_NoBright>光元素不足</MF_NoBright>	
+	
+	<MF_Earth>土元素数量：</MF_Earth>
+	<MF_Lightning>雷元素数量：</MF_Lightning>
+	<MF_Bright>光元素数量：</MF_Bright>	
+	</LanguageData>

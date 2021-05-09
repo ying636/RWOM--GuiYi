@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+   <!--Fire火-->
+   <HediffDef ParentName="InfectionBase">
+    <defName>MF_Fire</defName>
+    <hediffClass>MF_GuiYi.MF_Fire_Hediff_comp</hediffClass>
+    <label>Power of Element</label>
+	<!--Power of Element-->
+    <labelNoun>Fire</labelNoun>
+    <description>The power drawn from Fire mage will attack the enemies around the owner at regular intervals.</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <comps>	 
+	  <li>
+        <compClass>MF_GuiYi.MF_Fire_Hediff</compClass>
+      </li>	  
+    </comps>			
+	<stages>
+	<li>
+	<label>sparks of fire</label>
+		<statOffsets>
+		  <ComfyTemperatureMax>4</ComfyTemperatureMax>		  
+	    </statOffsets>
+	</li> 
+	<li>
+	<minSeverity>0.30</minSeverity>
+	<label>Medium sized fire</label>
+		<statOffsets>
+		  <ComfyTemperatureMax>10</ComfyTemperatureMax>		  
+	    </statOffsets>
+	</li> 
+	<li>
+	<minSeverity>0.60</minSeverity>
+	<label>blazing prairie fire</label>
+		<statOffsets>
+		  <ComfyTemperatureMax>16</ComfyTemperatureMax>		  
+	    </statOffsets>
+	</li> 	
+	<li>
+	<minSeverity>1</minSeverity>
+	<label>fire of Climbing the sky</label>
+		<statOffsets>
+		  <ComfyTemperatureMax>20</ComfyTemperatureMax>		  
+	    </statOffsets>
+	</li> 
+	</stages>
+  </HediffDef>
+   
+   <!--Frost霜-->
+   
+  <HediffDef ParentName="InfectionBase">
+    <defName>MF_Frost</defName>
+    <hediffClass>MF_GuiYi.MF_Frost_Hediff</hediffClass>
+    <label>Power of Element</label>
+    <labelNoun>Frost</labelNoun>
+    <description>The power drawn from Ice mage will attack the enemies around the owner at regular intervals.。</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <comps>	 
+	  <li>
+        <compClass>MF_GuiYi.MF_Frost_Hediff_Comp</compClass>
+      </li>	  
+    </comps>			
+	<stages>
+	<li>
+	<label>tiny frost</label>
+	<statOffsets>
+		<ComfyTemperatureMin>-5</ComfyTemperatureMin>
+	</statOffsets>	
+	</li> 
+	<li>
+	<minSeverity>0.30</minSeverity>
+	<label>Snow white ice</label>
+	<statOffsets>
+		<ComfyTemperatureMin>-10</ComfyTemperatureMin>
+	</statOffsets>
+	</li> 
+	<li>
+	<minSeverity>0.60</minSeverity>
+	<label>Abyssal ice</label>
+	<statOffsets>
+		<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+	</statOffsets>
+	</li> 	
+	<li>
+	<minSeverity>1</minSeverity>
+	<label>Thousands of miles of ice</label>
+	<statOffsets>
+		<ComfyTemperatureMin>-40</ComfyTemperatureMin>
+	</statOffsets>
+	</li> 
+	</stages>
+  </HediffDef>
+  
+  <!--土earth-->
+  
+   <HediffDef ParentName="InfectionBase">
+    <defName>MF_Earth</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Power of Element</label>
+    <labelNoun>Earth</labelNoun>
+    <description>The power drawn from Geomancer ，Every other period of time will absorb the earth elements the world。</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <comps>	 
+	  <li>
+        <compClass>MF_GuiYi.MF_Earth</compClass>
+      </li>	  
+    </comps>			
+	<stages>
+	<li>
+	<label>dust</label>
+	</li> 
+	<li>
+	<minSeverity>0.30</minSeverity>
+	<label>fine stone</label>
+	</li> 
+	<li>
+	<minSeverity>0.60</minSeverity>
+	<label>barren hill</label>
+	</li> 	
+	<li>
+	<minSeverity>1</minSeverity>
+	<label>earth region</label>
+	</li> 
+	</stages>
+  </HediffDef>
+  
+  <!--雷霆lightning-->
+  
+   <HediffDef ParentName="InfectionBase">
+    <defName>MF_Lightning</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Power of Element</label>
+    <labelNoun>lightning</labelNoun>
+    <description>The power drawn from Lightning mage ，Every other period of time will absorb the Lightning elements the world。</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <comps>	 
+	  <li>
+        <compClass>MF_GuiYi.MF_Lightning</compClass>
+      </li>	  
+    </comps>			
+	<stages>
+	<li>
+	<label>Residual thunder</label>
+	</li> 
+	<li>
+	<minSeverity>0.30</minSeverity>
+	<label>Falling thunder</label>
+	</li> 
+	<li>
+	<minSeverity>0.60</minSeverity>
+	<label>loud thunder</label>
+	</li> 	
+	<li>
+	<minSeverity>1</minSeverity>
+	<label>disaster thunder</label>
+	</li> 
+	</stages>
+  </HediffDef>
+  
+  <!--光bright-->
+  
+   <HediffDef ParentName="InfectionBase">
+    <defName>MF_Bright</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Power of Element</label>
+    <labelNoun>sun</labelNoun>
+    <description>The power drawn from bright mage ，Every other period of time will absorb the bright elements the world.</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <comps>	 
+	  <li>
+        <compClass>MF_GuiYi.MF_Bright</compClass>
+      </li>	  
+    </comps>			
+	<stages>
+	<li>
+	<label>embers</label>
+	</li> 
+	<li>
+	<minSeverity>0.30</minSeverity>
+	<label>Incomplete sun</label>
+	</li> 
+	<li>
+	<minSeverity>0.60</minSeverity>
+	<label>setting sun</label>
+	</li> 	
+	<li>
+	<minSeverity>1</minSeverity>
+	<label>bright sun</label>
+	</li> 
+	</stages>
+  </HediffDef>
+  
+  <!---Power of Element-极致-->
+  
+   <HediffDef ParentName="InfectionBase">
+    <defName>MF_Element</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>Power of Element</label>
+    <labelNoun>primeval</labelNoun>
+    <description>It is a combination of five kinds of power of elements, which can be given to the Apostle by Mana Devourer.</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>			
+	<stages>
+	<li>
+	<label>primeval</label>
+	</li> 
+	</stages>
+  </HediffDef>
+  
+  
+  <!---Power of Element-->
+  
+    <HediffDef ParentName="InfectionBase">
+    <defName>MF_Mana_Pure</defName>
+    <hediffClass>MF_GuiYi.MF_Mana</hediffClass>
+    <label>Pure Mana</label>
+	<!--Pure Mana-->
+    <labelNoun>Mana</labelNoun>
+    <description>Power drawn from creatures with Mana，Pure mana is the essence of mage's all power.，Mana Devourer can use it to turn others into "Apostle"。or release some "taboo spells"</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+	<stages>
+	<li>
+	<label></label>
+	</li> 
+	</stages>
+  </HediffDef>
+  
+    <HediffDef ParentName="InfectionBase">
+    <defName>MF_Apostle</defName>
+    <hediffClass>MF_GuiYi.MF_Contract</hediffClass>
+    <label>Apostle contract</label>
+	<!--Apostle contract-->
+    <labelNoun>Apostle contract</labelNoun>
+    <description>A contract with a Mana Devourer.</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+	<stages>
+	<li>
+	<label></label>
+	</li> 
+	</stages>
+  </HediffDef>
+  
+    <HediffDef ParentName="InfectionBase">
+    <defName>MF_Aura</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>眷族光环</label>
+	<!--Apostle Aura-->
+    <labelNoun>光环</labelNoun>
+    <description>The aura of the surrounding clan will improve the ability of the Mana Devourer.This aura has boundless potential. If we can exert its full power, we can make all living beings submit to it。</description>
+	<scenarioCanAdd>false</scenarioCanAdd>
+    <makesSickThought>false</makesSickThought>	
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+	<comps>	 
+	  <li>
+        <compClass>MF_GuiYi.MF_Hediff_Aura</compClass>
+      </li>	  
+    </comps>	
+	<stages>
+	<li>
+	<label>I</label>
+	<painOffset>+0.3</painOffset>   
+	<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.3</offset>
+          </li>
+		  <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.1</offset>
+          </li>
+    </capMods>
+	<statOffsets>
+	 <MeleeDodgeChance>+3</MeleeDodgeChance>
+	 <AimingDelayFactor>-0.1</AimingDelayFactor>
+	</statOffsets>
+	</li> 
+	
+    <li>
+	<label>II</label>
+	<minSeverity>0.3</minSeverity>
+	<painOffset>+0.4</painOffset>   
+	<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.35</offset>
+          </li>
+		  <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+    </capMods>
+	<statOffsets>
+	 <MeleeDodgeChance>+35</MeleeDodgeChance>
+	 <AimingDelayFactor>-0.15</AimingDelayFactor>
+	</statOffsets>
+	</li> 
+	
+	<li>
+	<label>III</label>
+	<minSeverity>0.6</minSeverity>
+	<painOffset>+0.45</painOffset>   
+	<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.4</offset>
+          </li>
+		  <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.2</offset>
+          </li>
+    </capMods>
+	<statOffsets>
+	 <MeleeDodgeChance>+4</MeleeDodgeChance>
+	 <AimingDelayFactor>-0.2</AimingDelayFactor>
+	</statOffsets>	
+	</li> 
+	
+	<li>
+	<label>IV</label>
+	<minSeverity>0.8</minSeverity>
+	<painOffset>+0.5</painOffset>   
+	<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.5</offset>
+          </li>
+		  <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.3</offset>
+          </li>
+    </capMods>
+	<statOffsets>
+	 <MeleeDodgeChance>+5</MeleeDodgeChance>
+	 <AimingDelayFactor>-0.5</AimingDelayFactor>
+	</statOffsets>	
+	</li> 
+	
+    <li>
+	<label>V</label>
+	<minSeverity>1.0</minSeverity>
+	<painOffset>+0.5</painOffset>   
+	<capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.55</offset>
+          </li>
+		  <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.35</offset>
+          </li>
+    </capMods>
+	<statOffsets>
+	 <MeleeDodgeChance>+55</MeleeDodgeChance>
+	 <AimingDelayFactor>-0.55</AimingDelayFactor>
+	</statOffsets>		
+	</li> 
+	</stages>
+  </HediffDef>
+  
+</Defs>

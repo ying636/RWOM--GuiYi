@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		<MF_Fire.label>元素之力</MF_Fire.label>
+		<MF_Fire.description>从烈焰法师中汲取的力量，每隔一段时间会攻击所有者周边的敌人。</MF_Fire.description>
+		<MF_Fire.stages.0.label>星星之火</MF_Fire.stages.0.label>
+		<MF_Fire.stages.1.label>宜中之火</MF_Fire.stages.1.label>
+		<MF_Fire.stages.2.label>燎原烈火</MF_Fire.stages.2.label>
+		<MF_Fire.stages.3.label>攀天烈燚</MF_Fire.stages.3.label>
+	
+		<MF_Frost.label>元素之力</MF_Frost.label>
+		<MF_Frost.description>从冰霜法师中汲取的力量，每隔一段时间会攻击所有者周边的敌人。</MF_Frost.description>
+		<MF_Frost.stages.0.label>微末之霜</MF_Frost.stages.0.label>
+		<MF_Frost.stages.1.label>雪白薄冰</MF_Frost.stages.1.label>
+		<MF_Frost.stages.2.label>渊冰</MF_Frost.stages.2.label>
+		<MF_Frost.stages.3.label>万里冰封</MF_Frost.stages.3.label>
+	
+		<MF_Earth.label>元素之力</MF_Earth.label>
+		<MF_Earth.description>从地卜师中汲取的力量，每隔一段时间会汲取天地间的土元素。</MF_Earth.description>
+		<MF_Earth.stages.0.label>微尘</MF_Earth.stages.0.label>
+		<MF_Earth.stages.1.label>细石</MF_Earth.stages.1.label>
+		<MF_Earth.stages.2.label>荒山</MF_Earth.stages.2.label>
+		<MF_Earth.stages.3.label>地域</MF_Earth.stages.3.label>
+		
+		<MF_Lightning.label>元素之力</MF_Lightning.label>
+		<MF_Lightning.description>从雷霆法师中汲取的力量，每隔一段时间会汲取天地间的雷元素。</MF_Lightning.description>
+		<MF_Lightning.stages.0.label>余雷</MF_Lightning.stages.0.label>
+		<MF_Lightning.stages.1.label>落雷</MF_Lightning.stages.1.label>
+		<MF_Lightning.stages.2.label>惊雷</MF_Lightning.stages.2.label>
+		<MF_Lightning.stages.3.label>劫雷</MF_Lightning.stages.3.label>
+	
+		<MF_Bright.label>元素之力</MF_Bright.label>
+		<MF_Bright.description>从光明法师中汲取的力量，每隔一段时间会汲取天地间的光元素。</MF_Bright.description>
+		<MF_Bright.stages.0.label>余烬</MF_Bright.stages.0.label>
+		<MF_Bright.stages.1.label>残阳</MF_Bright.stages.1.label>
+		<MF_Bright.stages.2.label>落日</MF_Bright.stages.2.label>
+		<MF_Bright.stages.3.label>煌煌太日</MF_Bright.stages.3.label>
+	
+		<MF_Element.label>元素之力</MF_Element.label>
+		<MF_Element.description>由五种元素之力融合而来，噬法者能将其赐给眷族。</MF_Element.description>
+		<MF_Element.stages.0.label>原初</MF_Element.stages.0.label>
+	
+	    <MF_Mana_Pure.label>纯粹法力</MF_Mana_Pure.label>
+		<MF_Mana_Pure.description>从具有法力的生物中汲取的力量，纯粹法力是法师的所有法力浓缩而成的“精华”，噬法者可以利用它把其他人变为“随从”。或者释放一些“禁忌法术”。</MF_Mana_Pure.description>
+	  
+    	<MF_Apostle.label>眷族契约</MF_Apostle.label>
+		<MF_Apostle.description>与一位噬法者的契约。</MF_Apostle.description>
+	
+    	<MF_Aura.label>眷族光环</MF_Aura.label>
+		<MF_Aura.description>四周眷族所凝结的光环，会提高噬法者的能力。此物潜力无穷，若能发挥其全力，便能使众生臣服。</MF_Aura.description>
+	
+	
+	
+	</LanguageData>

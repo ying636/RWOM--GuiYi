@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenarioDef>
+    <defName>MF_Ruins</defName>
+    <label>Ancient ruin</label>
+    <description>You used to be a slave to a arcane fold，But by chance, you escape that faction and overheard  an ancient secret.A dead class 「Mana devourer」.
+	\nYou spend the next few years looking for traces left by the devourer，Now that you have found the relics left by the devourer, there is still a source of power left by the devourer in the relics。</description>
+    <scenario>
+      <summary>This is a unique and hard experience. You need one person to fight against the arcane fold</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony</factionDef>
+      </playerFaction>
+      <parts>
+	    <li Class="VFECore.ScenPart_ForcedFactionGoodwill">
+         <def>VFEC_ForcedFactionGoodwill</def>
+         <factionDef>Seers</factionDef>
+         <alwaysHostile>true</alwaysHostile>
+         <visible>false</visible>
+        </li>
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>1</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+        </li>
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>You have reached the ruins, so good luck.</text>
+          <closeSound>GameStartSting</closeSound>
+        </li>
+        <li Class="KCSG.ScenPart_AddStartingStructure">
+          <def>VFEC_AddStartingStructure</def>
+          <structureLabel>An ruins</structureLabel>
+          <nearMapCenter>True</nearMapCenter>
+          <chooseFrom>
+            <li>MF_Ruins</li>
+          </chooseFrom>
+        </li>
+		<li Class="ScenPart_ForcedTrait">
+          <def>ForcedTrait</def>
+          <trait>TM_Gifted</trait>
+		  <degree>2</degree>
+		  <context>PlayerStarter</context>
+        </li>
+		
+		
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>  

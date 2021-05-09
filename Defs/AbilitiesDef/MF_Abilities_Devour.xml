@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Devour</defName>
+    <label>Devour</label>
+	<!--吞噬-->
+    <description>Devour power of a fallen pawn or captive and kill it.if it isn't magic or might user,the caster will get a buff</description>
+	<!--吞噬一个倒地的人或俘虏的力量并杀死他，如果他不是职业者，那么施法者会获得一个BUFF-->
+	<uiIconPath>MF_Abilities/MF_Devour</uiIconPath>
+    <manaCost>0.40</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>MF_GuiYi.MF_Verb</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Devour_Projectile</defaultProjectile>
+		<abilityDef>MF_Devour</abilityDef>
+        <warmupTime>2</warmupTime>
+        <SecondsToRecharge>15</SecondsToRecharge>
+        <range>10</range>
+        <soundCast>MeleeHit_Metal_Sharp</soundCast>
+        <muzzleFlashScale>0</muzzleFlashScale>	
+        <isPrimary>false</isPrimary>			
+		<isViolent>true</isViolent>
+		<burstShotCount>1</burstShotCount>
+		<ticksBetweenBurstShots>1</ticksBetweenBurstShots>
+		<targetParams>
+			<canTargetPawns>true</canTargetPawns>
+			<canTargetBuildings>false</canTargetBuildings>
+			<canTargetSelf>false</canTargetSelf>
+			<canTargetLocations>false</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Devour</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Devour</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label>MF_Devour_pwr</label>
+					<description>MF_Devour_pwr_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>										
+					<label>MF_Devour_ver</label>
+					<description>MF_Devour_ver_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+				<li>
+					<label>MF_Devour_eff</label>
+					<description>MF_Devour_eff_description</description>
+					<levelMax>3</levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Devour</thingClass>
+	    <defName>MF_Devour_Projectile</defName>
+        <label>Seal</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--显现领域-->
+   <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Fire</defName>
+    <label>Projecting elemental fire</label>
+	<!--投影元素之火-->
+    <description>Projecting elemental fire to form elemental fire Realm,elemental fire Realm will damage surrounding enemies.</description>
+	<!--投影元素之火形成元素焰界，元素焰界会伤害周边的敌人。-->
+	<uiIconPath>MF_Abilities/MF_Fire</uiIconPath>
+    <manaCost>0.0</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Projecting_MF_Fire</defaultProjectile>
+		<abilityDef>MF_Fire</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>10.0</SecondsToRecharge>
+        <range>0</range>
+        <soundCast>TM_VibrationLow</soundCast>
+        <muzzleFlashScale>10</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+   	    <AbilityTargetCategory>TargetSelf</AbilityTargetCategory>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>true</canTargetSelf>
+		  <canTargetLocations>false</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+  	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Fire</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Fire</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax></levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+  
+  	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Projecting</thingClass>
+	    <defName>MF_Projecting_MF_Fire</defName>
+        <label>火</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--元素之霜-->
+	
+    <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Frost</defName>
+    <label>Projecting elemental ice</label>
+	<!--投影元素之冰-->
+    <description>Projecting elemental ice to form elemental ice Realm,elemental ice Realm will damage surrounding enemies.</description>
+	<!--投影元素之冰形成寒冰域界，寒冰域界会伤害周边的敌人。-->
+	<uiIconPath>MF_Abilities/MF_Frost</uiIconPath>
+    <manaCost>0.0</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Projecting_MF_Frost</defaultProjectile>
+		<abilityDef>MF_Frost</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>10.0</SecondsToRecharge>
+        <range>0</range>
+        <soundCast>TM_VibrationLow</soundCast>
+        <muzzleFlashScale>10</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+   	    <AbilityTargetCategory>TargetSelf</AbilityTargetCategory>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>true</canTargetSelf>
+		  <canTargetLocations>false</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+  	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Frost</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Frost</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax></levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	  	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Projecting</thingClass>
+	    <defName>MF_Projecting_MF_Frost</defName>
+        <label>霜</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--元素之岩-->
+	
+   <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Earth</defName>
+    <label>shape earth wall</label>
+	<!--凝结厚土-->
+    <description>consume a lot of earth element to shape earth wall.</description>
+	<!--消耗土元素以凝结土墙。-->
+	<uiIconPath>MF_Abilities/MF_Earth</uiIconPath>
+    <manaCost>0.0</manaCost>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_BLOS</verbClass>
+			<tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+		<requiresLineOfSight>false</requiresLineOfSight>
+        <defaultProjectile>MF_Projecting_MF_Earth</defaultProjectile>
+		<abilityDef>MF_Earth</abilityDef>
+        <warmupTime>0.05</warmupTime>
+        <SecondsToRecharge>0</SecondsToRecharge>
+        <range>1000</range>
+        <soundCast>TM_VibrationLow</soundCast>
+        <muzzleFlashScale>10</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<targetParams>
+		  <canTargetPawns>false</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>false</canTargetSelf>
+		  <canTargetLocations>true</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+  	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Earth</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Earth</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax></levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	  	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Earth_Projectile</thingClass>
+	    <defName>MF_Projecting_MF_Earth</defName>
+        <label>地</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--元素之雷-->
+	
+	<TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Lightning</defName>
+    <label>Thunder of sky</label>
+	<!--苍天落雷-->
+    <description>consume a lot of Thunder element to release Thunder.</description>
+	<!--消耗雷元素以释放雷电。-->
+	<uiIconPath>MF_Abilities/MF_Lightning</uiIconPath>
+    <manaCost>0.05</manaCost>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_BLOS</verbClass>
+			<tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+		<requiresLineOfSight>false</requiresLineOfSight>
+        <defaultProjectile>MF_Projecting_MF_Lightning</defaultProjectile>
+		<abilityDef>MF_Lightning</abilityDef>
+        <warmupTime>0.05</warmupTime>
+        <SecondsToRecharge>0</SecondsToRecharge>
+        <range>1000</range>
+        <soundCast>TM_VibrationLow</soundCast>
+        <muzzleFlashScale>10</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<targetParams>
+		  <canTargetPawns>false</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>false</canTargetSelf>
+		  <canTargetLocations>true</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+  	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Lightning</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Lightning</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax></levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	  	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Lightning_P</thingClass>
+	    <defName>MF_Projecting_MF_Lightning</defName>
+        <label>雷</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--元素之光-->
+	
+   <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Bright</defName>
+    <label>incomplete setting sun</label>
+	<!--落日残阳-->
+    <description>consume a lot of bright element to shape “incomplete sun”.</description>
+	<!--消耗光元素以形成一个"残阳"。-->
+	<uiIconPath>MF_Abilities/MF_Bright</uiIconPath>
+    <manaCost>0.20</manaCost>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_BLOS</verbClass>
+			<tooltipShowProjectileDamage>false</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>false</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>false</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+		<requiresLineOfSight>false</requiresLineOfSight>
+        <defaultProjectile>MF_Projecting_MF_Bright</defaultProjectile>
+		<abilityDef>MF_Bright</abilityDef>
+        <warmupTime>0</warmupTime>
+        <SecondsToRecharge>0</SecondsToRecharge>
+        <range>1000</range>
+        <soundCast>TM_VibrationLow</soundCast>
+        <muzzleFlashScale>10</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+		<targetParams>
+		  <canTargetPawns>false</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>false</canTargetSelf>
+		  <canTargetLocations>true</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+  
+  	<TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Bright</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Bright</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax></levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Bright_Projectile</thingClass>
+	    <defName>MF_Projecting_MF_Bright</defName>
+        <label>光</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--融合-->
+	
+   <TorannMagic.TMAbilityDef ParentName="BaseMagicAbility">
+    <defName>MF_Polymerization</defName>
+    <label>Power Bond</label>
+	<!--力量融合-->
+    <description>One power combine with aonther power to form a new power .</description>
+	<!--融合不同的力量。-->
+	<uiIconPath>MF_Abilities/MF_Polymerization</uiIconPath>
+    <manaCost>0.0</manaCost>
+	<efficiencyReductionPercent>.05</efficiencyReductionPercent>
+	<MainVerb Class="AbilityUser.VerbProperties_Ability">
+        <verbClass>TorannMagic.Verb_SB</verbClass>
+			<tooltipShowProjectileDamage>true</tooltipShowProjectileDamage>
+			<tooltipShowExtraDamages>true</tooltipShowExtraDamages>
+			<tooltipShowHediffsToApply>true</tooltipShowHediffsToApply>
+			<tooltipShowMentalStatesToApply>false</tooltipShowMentalStatesToApply>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>MF_Polymerization_projectile</defaultProjectile>
+		<abilityDef>MF_Polymerization</abilityDef>
+        <warmupTime>1.0</warmupTime>
+        <SecondsToRecharge>10.0</SecondsToRecharge>
+        <range>0</range>
+        <soundCast>TM_VibrationLow</soundCast>
+        <muzzleFlashScale>10</muzzleFlashScale>
+        <isPrimary>false</isPrimary>
+   	    <AbilityTargetCategory>TargetSelf</AbilityTargetCategory>
+		<targetParams>
+		  <canTargetPawns>true</canTargetPawns>
+		  <canTargetBuildings>false</canTargetBuildings>
+		  <canTargetSelf>true</canTargetSelf>
+		  <canTargetLocations>false</canTargetLocations>
+		</targetParams>
+    </MainVerb>
+  </TorannMagic.TMAbilityDef>
+	
+  <TorannMagic.TM_CustomPowerDef ParentName="CustomPower">
+		<defName>MF_Polymerization</defName>	
+		<customPower>	
+			<forMage>true</forMage>
+			<abilityDefs>									
+				<li>MF_Polymerization</li>					
+			</abilityDefs>
+			<skills>
+				<li>										
+					<label></label>
+					<description></description>
+					<levelMax></levelMax>
+					<costToLevel>1</costToLevel>
+				</li>
+			</skills>
+					<costToLevel>2</costToLevel>	
+		</customPower>
+	</TorannMagic.TM_CustomPowerDef>
+	
+	<ThingDef ParentName="BaseBullet" Class="AbilityUser.ProjectileDef_Ability">
+		<thingClass>MF_GuiYi.MF_Bond_Projecting</thingClass>
+	    <defName>MF_Polymerization_projectile</defName>
+        <label>融合</label>
+        <graphicData>
+			<texPath>Spells/invis</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+        </graphicData>
+        <projectile>
+			<flyOverhead>true</flyOverhead>
+            <damageDef>Bomb</damageDef>
+            <damageAmountBase>0</damageAmountBase>
+            <speed>200</speed>
+        </projectile>
+    </ThingDef>
+</Defs>

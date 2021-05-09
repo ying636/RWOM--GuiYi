@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		
+		<MF_Contract.label>契约：眷族</MF_Contract.label>
+        <MF_Contract.description>与一位殖民者签订「眷族契约」，噬法者将力量赐予给眷族，眷族将为噬法者开辟江河，以身铺道。
+	
+	
+	
+	眷族可以通过噬法者赐予新的力量获得强化。
+	需要纯粹法力:1ea</MF_Contract.description>	
+
+		<MF_Frost.label>投影元素之冰</MF_Frost.label>
+        <MF_Frost.description>投影元素之冰形成元素冰界，元素冰界会伤害周边的敌人，且冻结它们的伤口。</MF_Frost.description>	
+	
+		<MF_Fire.label>投影元素之火</MF_Fire.label>
+        <MF_Fire.description>投影元素之火形成火焰域界，火焰域界会伤害周边的敌人。</MF_Fire.description>	
+	
+		<MF_Devour.label>吞噬</MF_Devour.label>
+        <MF_Devour.description>吞噬一个倒地的人或俘虏的力量并杀死他，如果他不是职业者，那么施法者会获得一个BUFF</MF_Devour.description>	
+
+		<MF_Earth.label>凝结厚土</MF_Earth.label>
+        <MF_Earth.description>消耗土元素以凝结土墙。</MF_Earth.description>	
+	
+		<MF_Lightning.label>苍天落雷</MF_Lightning.label>
+        <MF_Lightning.description>消耗雷元素以释放雷电。</MF_Lightning.description>	
+	
+		<MF_Bright.label>落日残阳</MF_Bright.label>
+        <MF_Bright.description>消耗光元素以形成一个"残阳"。</MF_Bright.description>	
+	
+		<MF_Soothe.label>抚慰眷族</MF_Soothe.label>
+        <MF_Soothe.description>抚慰眷族，使眷族平静。</MF_Soothe.description>	
+
+		<MF_GuiYi_Ability.label>诡异</MF_GuiYi_Ability.label>
+        <MF_GuiYi_Ability.description>发射「诡异弹」，诡异弹击中时会使目标眩晕。</MF_GuiYi_Ability.description>	
+		
+		<MF_Polymerization.label>力量融合</MF_Polymerization.label>
+        <MF_Polymerization.description>融合不同的力量。</MF_Polymerization.description>	
+	
+    	<MF_Element.label>眷族：给予元素之力</MF_Element.label>
+        <MF_Element.description>给予一位眷族元素之力，使ta化为「元素使徒」。</MF_Element.description>	
+		
+		
+	</LanguageData>

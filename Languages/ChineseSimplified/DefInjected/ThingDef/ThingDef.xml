@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<LanguageData>
+		<MF_Sun.label>残阳</MF_Sun.label>
+        <MF_Sun.description>以光元素为核心，法力为躯壳所形成的「残阳」,会伤害四周的亡灵，恶魔，治愈四周的盟友。</MF_Sun.description>
+
+		<MF_altar.label>远古圣坛</MF_altar.label>
+        <MF_altar.description>从远古之时传承下来的圣坛，这个圣坛之中还保留着些许噬法者的力量，虽不多，但足够一位凡人成为噬法者了。</MF_altar.description>
+		
+		<MF_Powerlessaltar.label>寂灭圣坛</MF_Powerlessaltar.label>
+        <MF_Powerlessaltar.description>从远古之时传承下来的圣坛，这个圣坛之中已无丝毫力量，当做装饰或许不错？</MF_Powerlessaltar.description>
+		
+		
+	</LanguageData>
